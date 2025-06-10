@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#SaveRajaAmpat</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            background-image: url(imge/download\ \(1\).jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .banner-container {
+            width: 90%;
+            max-width: 1200px;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            /* Biru laut cerah */
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInScale 1s ease-out;
+        }
+        
+        .banner-container::before,
+        .banner-container::after {
+            content: '';
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            filter: blur(10px);
+            animation: floatBubbles 15s infinite ease-in-out;
+        }
+        
+        .banner-container::before {
+            width: 150px;
+            height: 150px;
+            top: -50px;
+            left: -50px;
+            animation-delay: 0s;
+        }
+        
+        .banner-container::after {
+            width: 200px;
+            height: 200px;
+            bottom: -70px;
+            right: -70px;
+            animation-delay: 5s;
+        }
+        
+        .hashtag {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em;
+            color: #fff;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            animation: bounceIn 1s ease-out;
+        }
+        
+        .quote {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.8em;
+            color: #ffe;
+            margin-bottom: 30px;
+            font-style: italic;
+            line-height: 1.5;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            animation: slideInUp 1.2s ease-out;
+        }
+        
+        .action-button {
+            background-color: #ffcc00;
+            /* Kuning cerah */
+            color: #333;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            animation: pulse 1.5s infinite alternate;
+        }
+        
+        .action-button:hover {
+            background-color: #e6b800;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+        /* Animasi */
+        
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.1);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes slideInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.05);
+            }
+        }
+        
+        @keyframes floatBubbles {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.1;
+            }
+            25% {
+                transform: translate(20px, -20px) scale(1.1);
+                opacity: 0.15;
+            }
+            50% {
+                transform: translate(0, -40px) scale(1.2);
+                opacity: 0.2;
+            }
+            75% {
+                transform: translate(-20px, -20px) scale(1.1);
+                opacity: 0.15;
+            }
+            100% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.1;
+            }
+        }
+        /* Responsif */
+        
+        @media (max-width: 768px) {
+            .banner-container {
+                padding: 30px 15px;
+            }
+            .hashtag {
+                font-size: 2.5em;
+            }
+            .quote {
+                font-size: 1.4em;
+            }
+            .action-button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hashtag {
+                font-size: 2em;
+            }
+            .quote {
+                font-size: 1.2em;
+            }
+            .action-button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+        
+        .beranda {
+            width: 50px;
+            height: 50px;
+            background-color: #0509f4;
+            cursor: pointer;
+            border-radius: 20% 20%;
+        }
+        
+        .beranda img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .beranda:active {
+            background-color: #ffcc00;
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-container">
+        <h1 class="hashtag">#SaveRajaAmpat</h1>
+        <p class="quote">"Papua bukan tanah kosong, stop nikel! Mari jaga surga timur Indonesia."</p>
+        <a href="#" class="action-button">Pelajari Lebih Lanjut</a><br>
+        <div class="beranda">
+            <a href="index.html" title="BERANDA"><img src="icon/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+        </div>
+    </div>
+</body>
+
+</html>
