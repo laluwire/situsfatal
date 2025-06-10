@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <style>
+        body {
+            background-color: rgb(24, 24, 22);
+            background-image: url(imge/wpnight.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: rgb(10, 10, 10);
+            text-align: center;
+        }
+        
+        table {
+            width: 300px;
+            height: 200px;
+            background-color: rgb(2, 51, 59);
+            border: 1px solid #ddd;
+        }
+        
+        table td {
+            text-align: center;
+            vertical-align: top;
+        }
+        
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        table p {
+            display: flex;
+            vertical-align: top;
+            text-align: center;
+            font-size: small;
+            color: white;
+        }
+        
+        .header {
+            background-color: bisque;
+        }
+        
+        .td1 {
+            color: white;
+        }
+        
+        .roda {
+            text-align: ;
+        }
+        
+        @keyframes putar {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .roda {
+            animation: putar 4s linear infinite;
+            transform-origin: center center;
+            border-radius: 50% 50%;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .back {
+            width: auto;
+            height: auto;
+        }
+        
+        .back img {
+            background-color: rgb(255, 0, 0);
+        }
+        
+        .back :active {
+            background-color: blueviolet;
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center">
+        <tr>
+            <td>
+                <div class="header">profil
+
+                </div><br>
+                <img src="imge/eyeserror.jpg" alt="">
+                <td class="td1">
+                    <p>CharName: EyesError</p>
+                    <p>Age : 22</p>
+                    <p>address: wakanda</p>
+                    <p>email :
+                        <a href="mailto:lalusanma4@gmail.com"> lalusanma4@gmail.com</a>
+                    </p>
+                    <p>no phone : +628123456789</p>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <img class="roda" src="imge/roda.png" alt="">
+    <div class="back"> <br>
+        <a href="index.html" title="Kembali ke beranda"><img src="icon/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+    </div>
+
+</body>
+
+</html>
